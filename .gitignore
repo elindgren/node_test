@@ -283,3 +283,9 @@ typings/
 # Sonarlint plugin
 
 # End of https://www.gitignore.io/api/node,webstorm,jetbrains,jetbrains+all
+
+# Ignore build artifacts
+/node_modules
+npm-debug.log
+.DS_Store
+/*.env
