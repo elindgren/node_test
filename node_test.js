@@ -1,7 +1,9 @@
 var http = require('http')
+const PORT = process.env.PORT || 5000;  // Use the env port if available
 
-http.createServer(onRequest).listen(5000);
-console.log('Server has started');
+
+http.createServer(onRequest).listen(PORT);
+console.log('Server has started on port ' + PORT);
 
 function onRequest(request, response){
     response.writeHead(200);
